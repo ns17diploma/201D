@@ -1,0 +1,19 @@
+{
+  "name": "d",
+  "productName": "d",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "dependencies": {
+    "chunk": "^0.0.2",
+    "electron": "^1.7.10",
+    "jquery": "^3.2.1",
+    "jsonfile": "^2.4.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "XY",
+  "license": "ISC"
+}

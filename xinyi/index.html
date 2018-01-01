@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Photo Competition Entry Record</title>
+	<link rel="stylesheet" type="text/css" href="semantic-ui/dist/semantic.min.css">
+</head>
+<body style="background-color: powderblue">
+	<div class="ui hidden divider"></div>
+	<div class="ui hidden divider"></div>
+	<div class="ui hidden divider"></div>
+	<div style="font-weight: bold;">
+		<div class="ui hidden divider"></div>
+		<div class="ui form attached segment" style="width: 860px; margin: auto;">
+			<u>F</u>ile
+			<u>R</u>ecords
+			<u>E</u>nd
+			<div class="ui text container" id="container">
+				<h1 style="text-align: center;">Photo Competition Entry Record</h1>
+				<div class="ui negative message error-message" id="error01">
+				<label style="text-align: center;" class="header">Form is not complete</label>
+			</div>
+			<div class="ui success message" id="error00">
+				<label style="text-align: center;" class="header">Success</label>
+			</div>
+				<div class="two fields">
+					<div class="field">
+						<label>Entrant's Number</label>
+						<input type="number" id="entrant_number" class="input">
+						<div class="ui pointing basic red label error-message" id="error03">
+						<label>Entrant's Number is not 6 digit</label>
+					</div>
+					<div class="ui pointing basic red label error-message" id="error02">
+						<label>Entrant's Number is no valid modules 11 number</label>						
+					</div>
+					</div>
+					
+					<div class="field">
+						<label>Date Of Entry</label>
+						<input type="date" class="input" id="date_entry">
+					</div>
+				</div>
+				<div class="field">
+					<label>Name Of Entrant</label>
+					<input type="text" class="input" id="name_entrant">
+				</div>
+				<div class="field">
+					<label>Picture Title</label>
+					<input type="text" class="input" id="picture_title">
+				</div>
+				<div class="field">
+					<label>Picture Location</label>
+					<input type="text" class="input" id="picture_location">
+				</div>
+				<div class="two fields">
+					<div class="field">
+						<label>Category Code</label>
+						<select class="ui dropdown" name="type" id="category_code">
+							<option value="People">People</option>
+							<option value="Landscape">Landscape</option>
+							<option value="Garden">Garden</option>
+							<option value="Close-up">Close-up</option>
+						</select>
+					</div>
+					<div class="field">
+							<label>Camera Type</label>
+							<select class="ui dropdown" name="type" id="camera_type">
+								<option value="D">D</option>
+								<option value="F">F </option>
+							</select>
+						</div>
+				</div>
+			</div>
+			<div class="ui hidden divider"></div>
+			<div class="ui form">
+				<div class="ui bottom attached buttons">
+					<div class="ui primary button" id="button">Save</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+<script src="index.js"></script>
+</html>

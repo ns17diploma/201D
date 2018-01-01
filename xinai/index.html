@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>PHOTO COMPETITION ENTRY RECORD</title>
+	<script src="node_modules/jquery/dist/jquery.min.js"></script>
+	<link rel="stylesheet" href="Semantic-UI-CSS-
+	master/semantic.min.css">
+</head>
+<body>
+	<section id="sec01">
+		<div class="ui hidden divider"></div>
+		<div class="ui hidden divider"></div>
+		<div class="ui hidden divider"></div>
+		<div class="ui hidden divider"></div>
+		<div class="ui form attached segment" style="width: 60%; margin: auto;">
+			<div>
+				<b><u>F</u>ile
+				<u>R</u>ecords
+				<u>E</u>nd
+				</b>
+			</div>
+			<h1 class="ui header" style="text-align: center;">PHOTO COMPETITION ENTRY RECORD</h1>
+			<div class="ui negative message error-message" id="error0"> 
+	        <label class="header" style="text-align: center;">Please complete the form</label>
+	    	</div>
+	    	<div class="ui success message" id="error00"> 
+	    	    <label class="header" style="text-align: center;">Success</label>
+	    	</div>
+			<div class="ui form">
+				<div class="two fields">
+					<div class="field">
+						<label>Entrant's Number:</label>
+			      		<input type="number" class="input" id="number1" placeholder="Entrant's Number">
+			      		<div class="ui pointing basic red label error-message" id="error01">
+			      			<label>Entrant’s Number is not a valid modulus 11 number</label>
+				   		</div>
+				   		<div class="ui pointing basic red label error-message" id="error02">
+			      			<label>Entrant’s Number is not 6 digits</label>
+				   		</div>
+					</div>
+					<div class="field">
+						<label>Date of Entry:</label>
+			      		<input type="date" class="input" id="date">
+					</div>
+				</div>
+				<div class="field">
+					<label>Name of Entrant:</label>
+			     	<input type="text" class="input" id="name" placeholder="Name of Entrant">
+				</div>
+				<div class="field">
+					<label>Picture Title:</label>
+			     	<input type="text" class="input" id="title" placeholder="Picture Title">
+				</div>
+				<div class="field">
+					<label>Picture Location:</label>
+			     	<input type="text" class="input" id="location" placeholder="Picture Location">
+				</div>
+				<div class="two fields">
+					<div class="field">
+						<label>Category Code:</label>
+			      		<select class="ui dropdown input-save" id="code">
+			              	<option value="People">People</option>
+			              	<option value="Landscape">Landscape</option>
+			              	<option value="Garden">Garden</option>
+			              	<option value="Close-up">Close-up</option>
+			            </select>
+					</div>
+					<div class="field">
+						<label>Camare Type:</label>
+			      		<select class="ui dropdown input-save" id="type">
+			              	<option value="D">D</option>
+			              	<option value="F">F</option>
+			            </select>
+					</div>
+					<div class="ui hidden divider"></div>
+				</div>
+       			<div class="ui form">
+	       		<div class="ui bottom attached buttons">
+	        		<div class="ui primary button" id="save">Save</div>
+	      		</div>
+			</div>
+		</div>
+	</section>
+</body>
+<script src="js/index.js"></script>
+</html>
