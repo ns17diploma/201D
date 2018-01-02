@@ -1,0 +1,21 @@
+{
+  "name": "json",
+  "productName": "Electron tutorial app",
+  "version": "1.0.0",
+  "description": "json",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chunk": "0.0.2",
+    "electron": "^1.7.10",
+    "jquery": "^3.2.1",
+    "node": "^9.3.0"
+  },
+  "devDependencies": {
+    "electron-packager": "^10.1.0"
+  }
+}

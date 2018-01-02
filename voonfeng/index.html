@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Photo Competition Entry Record</title>
+	<link rel="stylesheet" href="semantic.min.css">
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+	
+	<p class="linetwo">Photo Competition Entry Record</p>
+
+	<section class="marginleft">
+
+	<div class="ui form">
+	  <div class="two fields">
+	    <div id="errornumber" class="field">
+	      <label class="label">Entrant's Number</label>
+	      <input id="check" class="common1 input_number membership" placeholder="Entrant's Number" required="true" type="number">
+	      <label class="errormassage0">Membership Number is not numeric</label>
+	      <label class="modulus">Membership Number is not a valid modulus 11 number</label>
+	      <label class="errormassage1">Membership Number is not 6 digits</label>
+	    </div>
+	  </div>
+	</div>
+	
+  	<div class="ui form">
+      <div class="two fields">
+      	<div id="errorentrant" class="field">
+        	<label class="label">Name of Entrant</label>
+        	<input id="entrant" class="common input_entrant" placeholder="Name of Entrant" required="true" type="text">
+        	<label class="errormassage2">Please input your name of entrant</label>
+      	</div>
+      </div>
+  	</div>
+
+  	<div class="ui form">
+      <div class="two fields">
+      	<div id="errortitle" class="field">
+        	<label class="label">Picture Title</label>
+        	<input id="title" class="common input_title" placeholder="Picture Title" required="true" type="text">
+        	<label class="errormassage3">Please input your picture title</label>
+      	</div>
+      </div>
+  	</div>
+
+  	<div class="ui form">
+      <div class="two fields">
+      	<div id="errorlocation" class="field">
+        	<label class="label">Picture Location</label>
+        	<input id="location" class="common input_location" placeholder="Picture Location" required="true" type="text">
+        	<label class="errormassage4">Please input your picture location</label>
+      	</div>
+      </div>
+  	</div>
+
+  	<div class="ui form">
+      <div class="two fields">
+      	<div id="errorentry" class="field">
+        	<label class="label">Date of Entry</label>
+        	<input id="date" class="common input_date" placeholder="Date of Entry" required="true" type="date">
+        	<label class="errormassage5">Invalid date of entry</label>
+      	</div>
+      </div>
+  	</div>
+
+  	<div class="ui form">
+      <div class="two fields">
+      	<div id="errorcode" class="field">
+        	<label class="label">Category Code</label>
+        	<select id="code" class="common input_code" placeholder="Category Code" required="true" type="text">
+				<option value="People">People</option>
+				<option value="Landscape">Landscape</option>
+				<option value="Garden">Garden</option>
+				<option value="Close-up">Close-up</option>
+        	</select>
+      	</div>
+      </div>
+  	</div>
+	
+	<div class="ui form">
+      <div class="two fields">
+      	<div id="errortype" class="field">
+        	<label class="label">Camera Type</label>
+        	<select id="type" class="common input_type" placeholder="Camera Type" required="true" type="text">
+				<option value="D">D</option>
+				<option value="F">F</option>
+        	</select>
+      	</div>
+      </div>
+  	</div>
+	</section>
+
+  	<section class="saveplace">
+  	<button id="myBtn" class="save button" type="submit" >Save  Record</button>
+  	<button class="cancel button">Cancel</button>
+  	<br><br>
+    <label class="inputcheck">Please check your form</label>
+  	<!-- The Modal -->
+    <div id="myModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+      <div class="modal-header">
+        <span class="close" onclick="clickSpan()">&times;</span>
+        <h2>Complete</h2>
+      </div>
+      <div class="modal-body">
+        <p>Completle Submit The Form</p>
+      </div>
+      <div class="modal-footer"></div>
+    </div>
+  </section>
+  <script src="index.js"></script>
+
+</body>
+</html>
