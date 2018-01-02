@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Assignment D</title>
+	<link rel="stylesheet" type="text/css" href="semantic-ui/semantic.min.css">
+</head>
+<body style="background-color: #A0CFEC">
+	<div class="ui hidden divider"></div>
+	<div class="ui hidden divider"></div>
+	<div class="ui hidden divider"></div>
+	<div class="ui hidden divider"></div>
+	<div class="ui hidden divider"></div>
+	<div class="ui hidden divider"></div>
+	<div class="ui form attached segment" style="width: 60%; margin: auto">
+		<h1 class="ui header" style="text-align: center;">PHOTO COMPETITION ENTRY RECORD</h1>
+		<div class="ui negative message error-message" id="error0"> 
+	        <label class="header" style="text-align: center;">Please complete the form</label>
+	    </div>
+	    <div class="ui success message" id="success">
+    		<div class="header" style="text-align: center;">Form Completed</div>
+		</div>
+		<div class="ui hidden divider"></div>
+		<div class="ui hidden divider"></div>
+		<div class="ui form">
+		<div class="field">
+    	<div class="field">
+    	  <div class="field">
+    		<label>Entrant's Number</label>
+    	    <input type="number" name="Entrant" placeholder="Entrant's Number" id="number">
+                <div class="ui pointing basic red label error-message" id="error01">
+                    <label >Entrant's is not numeric</label>
+                </div>
+                <div class="ui pointing basic red label error-message" id="error02">
+                    <label>Entrant's is 6 digits</label>
+                </div>
+                <div class="ui pointing basic red label error-message" id="error03">
+                    <label> Entrant's Number is not a valid modulus 11 number</label>    
+                </div>
+    	  </div>
+    	</div>
+        <div class="ui hidden divider"></div>
+        <div class="ui hidden divider"></div>
+    	<div class="ui form">
+    	<div class="two fields">
+    	<div class="field">
+    	  	<label>Name of Entrant</label>
+    	    <input type="text" name="Name of Entrant" placeholder="Name of Entrant" id="name_of_entrant">
+    	</div>
+        <div class="field">
+            <label>Picture Title</label>
+            <input type="text" name="Picture Title" placeholder="Picture Title" id="picture_title">
+        </div>
+    	</div>
+    	<div class="ui hidden divider"></div>
+    	<div class="ui hidden divider"></div>
+        <div class="ui hidden divider"></div>
+    	<div class="ui form">
+    	<div class="two fields">
+    	  <div class="field">	
+    	    <label>Picture Location</label>
+    	    <input type="text" name="Picture Location" placeholder="Picture Location" id="picture_location">
+    	  </div>
+          <div class="field">   
+            <label>Date of Entry</label>
+            <input type="Date" name="Date of Entry" placeholder="Date of Entry" id="date_of_entry">
+          </div>
+    	</div>
+    	</div>
+    	<div class="ui hidden divider"></div>
+        <div class="ui hidden divider"></div>
+        <div class="ui hidden divider"></div>
+    	<div class="ui form">
+    	<div class="two fields">
+    	  <div class="field">	
+    	    <label>Category Code</label>
+            <select id="category_code">
+                <option>People</option>
+                <option>Landscape</option>
+                <option>Garden</option>
+                <option>Close-up</option>
+            </select>
+    	  </div>
+        <div class="field">
+    	 <div class="field">   
+            <label>Camera Type</label>
+            <select id="camera_type">
+                <option>D</option>
+                <option>F</option>
+            </select>
+          </div>
+    	</div>
+    	</div>
+    		<div class="ui hidden divider"></div>
+			<div class="ui hidden divider"></div>
+            <div class="ui hidden divider"></div>
+    		<div class="ui form">
+	       	<div class="ui bottom attached buttons">
+	        <div class="ui primary button" id="save">Save</div>
+	      	</div>
+            <div class="ui hidden divider"></div>
+            <div class="ui hidden divider"></div>
+            <div class="ui hidden divider"></div>
+	    </div>
+  </div>
+</div>
+</body>
+<script type="text/javascript" src="app.js"></script>
+</html>
