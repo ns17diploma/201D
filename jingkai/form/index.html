@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="app.js"></script>
+	<link rel="stylesheet" href="semantic/semantic.min.css">
+	<style>
+		h1 {
+			text-align: center;
+		}
+		#main {
+			width: 70vw;
+			margin: auto;
+		}
+		select, input {
+			font-size: 0.9em;
+		}
+	</style>
+</head>
+<body>
+	<h1>PHOTO COMPETITION ENTRY RECORD</h1>
+	<div id="main">
+		<div class="ui grid">
+			<div class="eight wide column">
+				Entrant's Number <br>
+				<div class="ui fluid input">
+					<input id="Enumber" name="Entrant_Number" type="number" class="getValue"> 
+				</div>
+			</div>
+			<div class="eight wide column">
+				Name of Entrant: <br>
+				<div class="ui fluid input">
+					<input id="Ename" name="Entrant_Name" type="text" class="getValue">
+				</div>
+			</div>
+		</div>
+		<div class="ui grid">
+			<div class="eight wide column">
+				Picture Title <br>
+				<div class="ui fluid input">
+					<input id="title" name="Picture_Title" type="text" class="getValue">
+				</div>
+			</div>
+			<div class="eight wide column">
+				Picture Location <br>
+				<div class="ui fluid input">
+					<input id="location" name="Picture Location" type="text" class="getValue">
+				</div>
+			</div>
+		</div>
+		<div class="ui grid">
+			<div class="eight wide column">
+				Date of Entry <br>
+				<div class="ui fluid input">
+					<input id="Edate" name="Entry_Date" type="date" class="getValue">
+				</div>
+			</div>
+			<div class="four wide column">
+				Category Code <br>
+				<select name="Category_Code" id="category" class="ui fluid dropdown selection getValue">
+					<option value=""></option>
+					<option value="people">People</option>
+					<option value="landscape">Landscape</option>
+					<option value="garden">Garden</option>
+					<option value="close_up">Close-up</option>
+				</select>
+			</div>
+			<div class="four wide column">
+				Camera Type <br>
+				<select name="Camera_Type" id="type" class="ui fluid dropdown selection getValue">
+					<option value=""></option>
+					<option value="D">D</option>
+					<option value="F">F</option>
+				</select>
+			</div>
+		</div>
+		<br>
+		<div class="two ui buttons allBtn">
+			<button id="saveBtn" class="ui primary button">Save</button>
+			<button id="clearBtn" class="ui button">Clear</button>			
+		</div>
+	</div>
+</body>
+</html>

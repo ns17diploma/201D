@@ -1,0 +1,17 @@
+{
+  "name": "form",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "KAI",
+  "license": "ISC",
+  "dependencies": {
+    "chunk": "0.0.2",
+    "electron": "^1.7.10",
+    "jquery": "^3.2.1",
+    "jsonfile": "^4.0.0"
+  }
+}
