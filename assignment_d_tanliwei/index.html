@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="UTF-8">
+  <title>Golf Club Bookings</title>
+  <link rel="stylesheet" type="text/css" href="node_modules/semantic-ui-css/semantic.min.css">
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/app.css">
+  </head>
+  <body>
+
+   
+
+      <div class="ui hidden divider"></div>
+      <div class="ui hidden divider"></div>
+      <div class="ui hidden divider"></div>
+
+      <div class="ui text container">
+      <h1 class="ui header">Member Form</h1>
+      <div class="ui hidden divider"></div>
+      <div class="ui hidden divider"></div>
+      <div class="ui hidden divider"></div>
+      <div id="message_box" class="ui attached message">
+        <div class="header">
+          Welcome to PHOTO Development Systems!
+        </div>
+          <p>Fill out the form below for PHOTO Development Systems</p>
+      </div>
+      <div class="ui form attached segment">
+        <div class="two fields">
+          <div class="field">
+            <label>Entrant's Number</label>
+            <input id="entrant_number" class="input_save" placeholder="Entrant's Number" value="135275">
+          </div>
+          <div class="field">
+            <label>Name of Entrant</label>
+            <input id="name_entrant" class="input_save"  value="" placeholder="Name of Entrant">
+          </div>
+        </div>
+        <div class="two fields">
+          <div class="field">
+            <label>Picture Title</label>
+            <input id="picture_title" class="input_save" placeholder="Picture Title">
+          </div>
+          <div class="field">
+            <label>Picture Location</label>
+            <input id="picture_location" placeholder="Picture Location">
+          </div>
+        </div>
+        <div class="two fields">
+          <div class="field">
+            <label>Date of Entry</label>
+            <input id="date_entry" type="date" value="2001-01-01">
+          </div>
+          <div class="field">
+            <label>Category Code</label>
+            <select id="category" class="ui dropdown" name="">
+              <option value="Landscape">Landscape</option>
+              <option value="Garden">Garden</option>
+              <option value="Close-up">Close-up</option>
+            </select>
+          </div>
+        </div>
+
+         <div class="field">
+            <label>Camera Type</label>
+            <select id="camare_type" class="ui dropdown" name="">
+              <option value="D">D</option>
+              <option value="F">F</option>
+            </select>
+          </div>
+          
+         
+        <button id="save_button" class="ui primary button">Save</button>
+        <button id="clear_button" class="ui button">Discard</button>
+
+
+    <script src="javascript/app.js"></script>
+
+  </body>
+</html>
